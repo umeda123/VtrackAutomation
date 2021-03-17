@@ -1,4 +1,4 @@
-package com.vytrack.step_defenitions;
+package com.vytrack.step_definitions;
 
 import com.vytrack.Utilities.ConfigurationReader;
 import com.vytrack.Utilities.Driver;
@@ -22,13 +22,6 @@ public class Hooks {
         }
         Driver.closeDriver();
     }
-    @BeforeStep
-    public void runBeforeSteps(){
-        System.out.println("________________Running Before Each STEP ________________");
-    }
-    @AfterStep
-    public void runsAfterSteps(){
-        System.out.println("________________Running AFTER Each STEP ________________");
-    }
+
 
 }

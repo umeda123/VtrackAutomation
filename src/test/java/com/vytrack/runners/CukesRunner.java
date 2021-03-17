@@ -7,23 +7,16 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
-               "html:target/Vytrack-Report.html",
-                "json:target/Vytrack-Report.json",
-                "return:target/Vytrack-Report.txt",
+                "html:target/cucumber-report.html",
+                "json:target/cucumber.json",
+                "rerun:target/rerun.txt"
            },
         features = "src/test/resources/features",
-        glue = "src/test/java/com/vytrack/step_defenitions",
-        dryRun = false,
+        glue = "com/vytrack/step_definitions",
+        dryRun = true,
         tags = ""
 
-
 )
-
-
-
-
-
-
 
 public class CukesRunner {
 }
